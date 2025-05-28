@@ -1,0 +1,13 @@
+services: 
+  green_code: 
+    build:
+      context: app
+      target: runner
+    ports: 
+      - '2025:2025' 
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+      - FLASK_RUN_PORT=2025
+      - FLASK_RUN_HOST=0.0.0.0
+      - CUSTOM_VAR=specified_value
