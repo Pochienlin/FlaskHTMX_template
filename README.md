@@ -1,5 +1,5 @@
-# PROJECT NAME
-This is a standalone container that accepts http queries to `PURPOSE`. 
+# Flask-HTMX template
+This is a standalone container for a single page webapp. You are required to know basic HTML and Python syntax for this to work
 
 # Running
 To start the container, the easiest way is to
@@ -36,15 +36,18 @@ dommons_webTempl:
 ```
 
 # Modifying
-You can find app-wide variables in `app/config.py`. This includes 
+You can add more pages by adding `html` files under `app/templates/` folder. However, you are recommended to write HTML snippets instead and place them into the templates file.
+- Read [HTMX docs](https://htmx.org/docs/) for some examples of the logic you can deploy
 
-# Core function
+## Templating with Jinja2 (builtin for Flask)
+For more complex rendering, you can use double braces `{{ thing to be replaced }}` in the HTML snippets, then in `app/app.py`, write the replacement logic with `render_template()` method. The `home.html` page serves as an example of how you can do this replacement
 
-# Examples
+## More paths
+For more complex HTMX requests (e.g. form submission and parsing), see the sample POST method route in `app/app.py`. A tip here is that you can use `render_template(template.html, **request_body)` to replace all double-brackets. As long as you can describe your logic in Python, you can inject your logic into the routing to render the templates as you please.
 
 # Licensing 
-    <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) <year>  <name of author>
+    Flask-HTMX Template
+    Copyright (C) 2025 Lin Po Chien
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
