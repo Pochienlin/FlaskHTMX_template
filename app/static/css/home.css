@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'DepartureMono';
+    src: url('../font/DepartureMono-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: beige;
+    font-family: 'DepartureMono';
+}
+
+.logo{
+    aspect-ratio: 1/1;
+    width: 150px;
+    margin: auto;
+}
+
+.content-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Provides a <br/> equivalent for flexgrid */
+.break{
+    flex-basis: 100%;
+}

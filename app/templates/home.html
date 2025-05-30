@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE NAME</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='icon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='icon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='icon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='icon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='icon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='icon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='icon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='icon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{url_for('static', filename='icon/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='icon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='icon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='icon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='icon/manifest.json')}}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ url_for('static',filename='/ms-icon-144x144.png')}}">
+    <meta name="theme-color" content="#ffffff">
+    <!-- THIS PART IS THE CDN DISTRIBUTION OF HTMX -->
+    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content-box">
+        <h1> Hello 
+        </h1>
+        <div class="break">
+            <p> Welcome to the app</p>
+            <aside>This is a Digital Commons template</aside><br/>
+            <img class="logo" src="{{ url_for('static', filename='assets/dommons logo (1).png')}}" alt="logo of a face made by characters d,c,o,m,m,o,n,s symbolizing digital commons"/>
+        </div>
+    </div>
+</body>
+</html>
